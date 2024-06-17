@@ -1,0 +1,98 @@
+
+
+  <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title><%= title %></title>
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.3.0/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+  <style>
+    * {
+      margin: 0;
+      font-family: "Times New Roman", Times, serif;
+    }
+    .navbar {
+      background-color: #ccccf0ee; 
+      padding: 10px 20px; 
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
+    .navbar-brand {
+      font-weight: bold;
+      color: #000;
+      text-decoration: none; 
+    }
+
+    
+    .navbar-toggler {
+      border: none; 
+      background-color: transparent; 
+      padding: 0; 
+    }
+
+    .navbar-toggler-icon {
+      color: #000; 
+    }
+
+    .collapse.navbar-collapse {
+      display: none; 
+    }
+
+
+
+   
+    .navbar-nav {
+      list-style: none; 
+      margin: 0; 
+      padding: 0; 
+    }
+
+    .nav-item {
+      margin-right: 15px; 
+    }
+
+    .nav-link {
+      color: #000; 
+      text-decoration: none; 
+    }
+
+    .nav-link:hover {
+      color: #333; 
+    }
+
+
+    .nav-item.active .nav-link {
+      color: #d55cf7; 
+    }
+    body {
+      background-color:#2a2a48ee;
+    }
+    .rodape {
+      background-color:  #ccccf0ee;
+      padding: 5px 0;
+      text-align: center;
+      color: #333;
+      border-top: 1px solid #ccc;
+      position: fixed;
+      bottom: 0;
+      width: 100%;
+
+    }
+  </style>
+</head>
+
+<body>
+  <nav class="navbar">
+    <div class="container">
+      <a href="/" class="navbar-brand"> XYZ LTDA </a>
+
+      <a class="nav-link" href="/tarefa">
+        <i class="fas fa-briefcase me-1"></i> Tarefas
+      </a>
+    </div>
+  </nav>
+</body>
+</html>
