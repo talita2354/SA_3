@@ -6,8 +6,8 @@
       <div class="table-responsive">
         <table id="tarefasList" class="table table-striped  text-center my-3">
           <thread>
-            <tr class="table-dark">
-              <th class="table-light"><a class="nav-link" href="/tarefa/create"> <i class="fas fa-plus me-1"></i> </a>
+            <tr class="table">
+              <th class="th"><a class="nav-link" href="/tarefa/create"> <i class="fas fa-plus me-1"></i> </a>
               </th>
               <th>ID</th>
               <th>Descrição</th>
@@ -32,10 +32,10 @@
                     <%= row.situacao %>
                   </td>
                   <td> 
-                    <%= row.data_abertura %>
+                    <%= row.data_abertura.toLocaleDateString('pt-BR') %>
                   </td>
                   <td> 
-                    <%= row.data_conclusao %>
+                    <%= row.data_conclusao.toLocaleDateString('pt-BR') %>
                   </td>
                   <td>
                     <a href="tarefa/update/<%= row.id %>" class="text-dark">

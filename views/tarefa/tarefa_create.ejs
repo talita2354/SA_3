@@ -2,10 +2,10 @@
 
 <div class="container">
   <div class="row">
-    <div class="col-lg-6 mx-auto mt-4 ">
+    <div class="col-lg-6 mx-auto mt-4">
       <div class="card shadow">
         <div class="card-header ">
-          <h3 class="text-dark text-center">Adicionar tarefa</h3>
+          <h3 class="text-light">Adicionar tarefa</h3>
         </div>
         <div class="card-body p-4">
           <form action="/tarefa" method="POST">
@@ -67,6 +67,7 @@
                 name="data_conclusao"
                 class="form-control form-control-lg"
                 placeholder="data de conclusão."
+                required
                
               />
             </div>
@@ -74,7 +75,7 @@
               <input
                 type="submit"
                 name="submit"
-                value="Gravar"
+                value="Salvar"
                 class="btn btn-dark btn-lg"
               />
             </div>

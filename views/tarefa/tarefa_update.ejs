@@ -1,84 +1,86 @@
 <%- include('../header') %> <% if ( tarefas !='' ) { tarefas.forEach((row,
-index)=> { %>
-<div class="container">
-  <div class="row">
-    <div class="col-lg-6 mx-auto mt-4">
-      <div class="card shadow">
-        <div class="card-header ">
-          <h3 class="text-dark text-center">Editar tarefa ( ID <%= row.id %> )</h3>
-        </div>
-        <div class="card-body p-4">
-          <form action="/tarefa/<%= row.id %>" method="POST">
-            <div class="mb-3">
-              <label
-                for="name"
-                class="col-sm-3 col-form-label col-form-label-lg"
-                >Descrição:</label
-              >
-              <input
-                type="text"
-                name="descricao"
-                class="form-control form-control-lg"
-                placeholder="Informe a descricao da tarefa..."
-                value="<%= row.descricao %>"
-                required
-              />
-            </div>
-            <div class="mb-3">
-              <label
-                for="name"
-                class="col-sm-3 col-form-label col-form-label-lg"
-                >Situação:</label
-              >
-              <input
-                type="text"
-                name="situacao"
-                class="form-control form-control-lg"
-                placeholder="Informe a situacao da tarefa..."
-                value="<%= row.situacao %>"
-                required
-              />
-            </div>
-            <div class="mb-3">
-              <label
-                for="data_abertura"
-                class="col-sm-3 col-form-label col-form-label-lg"
-                >Data de Abertura: </label
-              >
-              <input
-                type="date"
-                name="data_abertura"
-                class="form-control form-control-lg"
-                placeholder="Digite a data de Abertura"
-                value="<%= row.data_abertura %>"
-                required
-              />
-            </div>
-            <div class="mb-3">
-              <label
-                for="data_conclusao"
-                class="col-sm-3 col-form-label col-form-label-lg"
-                >data de conclusao:</label>
-              <input
-                type="date"
-                name="data_conclusao"
-                class="form-control form-control-lg"
-                placeholder="Digite a data de Conclusão"
-                value="<%= row.data_conclusao %>"
-              />
-            </div>
-            <div class="mb-3 d-grid">
-              <input
-                type="submit"
-                name="submit"
-                value="Gravar"
-                class="btn btn-dark btn-lg"
-              />
-            </div>
-          </form>
+  index)=> { %>
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-6 mx-auto mt-4">
+        <div class="card shadow">
+          <div class="card-header">
+            <h3 class="text-light">Editar tarefa ( ID <%= row.id %> )</h3>
+          </div>
+          <div class="card-body p-4">
+            <form action="/tarefa/<%= row.id %>" method="POST">
+              <div class="mb-3">
+                <label
+                  for="name"
+                  class="col-sm-3 col-form-label col-form-label-lg"
+                  >Descrição:</label
+                >
+                <input
+                  type="text"
+                  name="descricao"
+                  class="form-control form-control-lg"
+                  placeholder="Informe a descricao da tarefa..."
+                  value="<%= row.descricao %>"
+                  required
+                />
+              </div>
+              <div class="mb-3">
+                <label
+                  for="name"
+                  class="col-sm-3 col-form-label col-form-label-lg"
+                  >Situação:</label
+                >
+                <input
+                  type="text"
+                  name="situacao"
+                  class="form-control form-control-lg"
+                  placeholder="Informe a situacao da tarefa..."
+                  value="<%= row.situacao %>"
+                  required
+                />
+              </div>
+              <div class="mb-3">
+                <label
+                  for="data_abertura"
+                  class="col-sm-3 col-form-label col-form-label-lg"
+                  >Data de Abertura:</label
+                >
+                <input
+                  type="date"
+                  name="data_abertura"
+                  class="form-control form-control-lg"
+                  placeholder="Digite a data de Abertura"
+                  value="<%= row.data_abertura %>"
+                  required
+                />
+              </div>
+              <div class="mb-3">
+                <label
+                  for="data_conclusao"
+                  class="col-sm-3 col-form-label col-form-label-lg"
+                  >data de conclusao:</label
+                >
+                <input
+                  type="date"
+                  name="data_conclusao"
+                  class="form-control form-control-lg"
+                  placeholder="Digite a data de Conclusão"
+                  value="<%= row.data_conclusao %>"
+                  required
+                />
+              </div>
+              <div class="mb-3 d-grid">
+                <input
+                  type="submit"
+                  name="submit"
+                  value="Gravar"
+                  class="btn btn-dark btn-lg"
+                />
+              </div>
+            </form>
+          </div>
         </div>
       </div>
     </div>
   </div>
-</div>
-<% }) } %> <%- include('../footer') %>
+  <% }) } %> <%- include('../footer') %>
